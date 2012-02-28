@@ -1,1 +1,6 @@
 name = Node clone tab
+description = "Adds the clone option as a tab instead of an action"
+core = "7.x"
+dependencies[] = clone
+
+files[] = node_clone_tab.module
