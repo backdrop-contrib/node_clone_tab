@@ -1,0 +1,21 @@
+<?php
+/**
+ * @file
+ *
+ * Provides Node Clone Tab install and uninstall routines.
+ */
+
+/**
+ * Implements hook_install().
+ */
+function node_clone_tab_install() {
+  config_set('clone.settings', 'override_title', '');
+}
+
+
+/**
+ * Implements hook_update_N().
+ */
+function node_clone_tab_update_1000() {
+  config_set('clone.settings', 'override_title', '');
+}
