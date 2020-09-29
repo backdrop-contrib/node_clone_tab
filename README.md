@@ -17,14 +17,12 @@ from the default value.
 Documentation
 -------------
 
-Additional documentation is located in the Wiki:
-https://github.com/backdrop-contrib/node-clone-tab/wiki/Documentation.
+Additional documentation is located in the [Wiki](https://github.com/backdrop-contrib/node_clone_tab/wiki/Documentation).
 
 Issues
 ------
 
-Bugs and feature requests should be reported in the Issue Queue:
-https://github.com/backdrop-contrib/node-clone-tab/issues.
+Bugs and feature requests should be reported in the [Issue Queue](https://github.com/backdrop-contrib/node_clone_tab/issues).
 
 Current Maintainers
 -------------------
