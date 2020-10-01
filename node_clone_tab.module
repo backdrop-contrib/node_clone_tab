@@ -24,11 +24,11 @@ function node_clone_tab_menu_alter(&$items) {
  * Add a setting for the tab title to the Node Clone settings form.
  */
 function node_clone_tab_form_clone_settings_alter(&$form, &$form_state, $form_id) {
-  $form['basic']['override_title'] = array(
+  $form['basic']['node_clone_tab_override_title'] = array(
     '#type' => 'textfield',
     '#title' => t('Override title'),
     '#description' => t('Node Clone Tab is installed. You can enter a title here that will override the title specified by the preceding checkbox.'),
-    '#default_value' => config_get('clone.settings', 'override_title'),
+    '#default_value' => config_get('clone.settings', 'node_clone_tab_override_title'),
   );
 }
 
@@ -37,7 +37,7 @@ function node_clone_tab_form_clone_settings_alter(&$form, &$form_state, $form_id
  * Alter a menu item to change its title and/or turn it into a tab.
  */
 function node_clone_tab_alter_item(&$item) {
-  if (!empty(config_get('clone.settings', 'override_title'))) {
+  if (!empty(config_get('clone.settings', 'node_clone_tab_override_title'))) {
     $item['title callback'] = 'node_clone_action_link_title';
   }
   $item['type'] = MENU_LOCAL_TASK;
@@ -48,5 +48,5 @@ function node_clone_tab_alter_item(&$item) {
  * Return the title to use on the tab.
  */
 function node_clone_action_link_title() {
-  return config_get('clone.settings', 'override_title');
+  return config_get('clone.settings', 'node_clone_tab_override_title');
 }

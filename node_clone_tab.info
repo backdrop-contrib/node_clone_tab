@@ -6,3 +6,4 @@ type = module
 
 dependencies[] = clone
 
+configure = admin/config/content/clone
