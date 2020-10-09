@@ -6,8 +6,7 @@ Node Clone Tab provides the clone action as a tab rather than a local action.
 Installation
 ------------
 
-- Install this module using the official Backdrop CMS instructions at
-https://backdropcms.org/guide/modules.
+- Install this module using [the official Backdrop CMS instructions]( https://backdropcms.org/guide/modules).
 
 - Visit the Node Clone configuration page under Administration > Configuration >
 Content Authoring > Node Clone settings (admin/config/content/clone) where you
