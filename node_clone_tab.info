@@ -1,6 +1,5 @@
 name = Node Clone Tab
 description = Adds the clone option as a tab instead of an action.
-version = 1.x-1.1.0-alpha1
 backdrop = 1.x
 type = module
 
