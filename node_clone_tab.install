@@ -25,5 +25,4 @@ function node_clone_tab_install() {
  */
 function node_clone_tab_update_1000() {
   config_set('clone.settings', 'node_clone_tab_override_title', '');
-  config->save();
 }
