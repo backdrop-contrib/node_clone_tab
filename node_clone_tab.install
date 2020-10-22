@@ -21,7 +21,7 @@ function node_clone_tab_install() {
 
 
 /**
- * Implements hook_update_N().
+ * Initialize configuration.
  */
 function node_clone_tab_update_1000() {
   config_set('clone.settings', 'node_clone_tab_override_title', '');
