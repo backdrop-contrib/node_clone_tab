@@ -14,15 +14,21 @@ function node_clone_tab_install() {
   // else (typically "Clone") to match the other one-word tab titles. Since we
   // add the field to the Node Clone settings page, and Node Clone uses
   // system_settings_form() to store all the fields on the settings page into
-  // clone.settings.json, we'll initialize 'node_clone_tab_override_title' as a new field in
-  // the Node Clone config file.
+  // clone.settings.json, we'll initialize 'node_clone_tab_override_title' as a
+  // new field in the Node Clone config file.
   config_set('clone.settings', 'node_clone_tab_override_title', '');
 }
-
 
 /**
  * Initialize configuration.
  */
 function node_clone_tab_update_1000() {
   config_set('clone.settings', 'node_clone_tab_override_title', '');
+}
+
+/**
+ * Implements hook_uninstall().
+ */
+function node_clone_tab_uninstall() {
+  config_clear('clone.settings', 'node_clone_tab_override_title');
 }
